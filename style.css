@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Tinos", serif;
+    background-color: #2F4156;
+    color: white;
+    /* #567C8D */
+    background-image: linear-gradient(180deg, #2F4156, #567C8D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animacaoFundo 10s infinite;
+
+}
+
+/* .shrek {
+    width: 100%;
+    height: 100vh;
+    animation: animacaoSecreta 25s ease-in;
+    position: relative;
+}
+
+@keyframes animacaoSecreta {
+    from {top: 0px;}
+    to {top: 350px;}
+
+    0% {opacity: 0%;}
+    50% {opacity: 0%;}
+    100% {opacity: 100%;}
+} */
+
+@keyframes animacaoFundo {
+    0% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+    
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.titulo-pagina {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.descricao-1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    margin: 1rem 25%;
+    text-align: justify;
+    gap: 1rem;
+}
+
+.texto-break h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.descricao-2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    margin: 1rem 25%;
+    text-align: justify;
+    gap: 1rem;
+}
+
+/* css das imagens do index */
+
+.img-chuveiro-1 {
+    width: 100%;
+    height: 40vh;
+}
+
+.img-chuveiro-2     {
+    width: 100%;
+    height: 40vh;
+}
