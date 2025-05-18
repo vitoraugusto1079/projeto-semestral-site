@@ -18,22 +18,6 @@ body {
 
 }
 
-/* .shrek {
-    width: 100%;
-    height: 100vh;
-    animation: animacaoSecreta 25s ease-in;
-    position: relative;
-}
-
-@keyframes animacaoSecreta {
-    from {top: 0px;}
-    to {top: 350px;}
-
-    0% {opacity: 0%;}
-    50% {opacity: 0%;}
-    100% {opacity: 100%;}
-} */
-
 @keyframes animacaoFundo {
     0% {
         background-position: 50% 0%;
@@ -102,6 +86,52 @@ h1 {
     height: 40vh;
 }
 
+/* Estilo base do menu */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.2); /* leve transparência */
+    font-family: "Josefin Sans", sans-serif;
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    color: white;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .menu li a {
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar .menu li a:hover {
+    color: #ddd;
+}
+
+/* Esconder ícone e checkbox inicialmente */
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+#menu-toggle {
+    display: none;
+}
+
 /* Responsividade geral */
 @media screen and (max-width: 768px) {
     .descricao-1,
@@ -129,6 +159,25 @@ h1 {
 
     .descricao-2 {
         flex-direction: column-reverse;
+    }
+
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #2F4156;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
     }
 }
 
